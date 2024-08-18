@@ -4,11 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <title>Картины</title>
 </head>
 
 <body>
-
+  <header></header>
+  <main class="main">
+    <h1 class="main__title">Моя галерея</h1>
+    <div class="main__img">
+      <img class="main__img-dali" src="./assets/img/img1.jpg" alt="Dali1">
+      <img class="main__img-dali" src="./assets/img/img2.jpg" alt="Dali2">
+    </div>
+    <div class="main__btn">
+      <button class="btn" onclick="ResPrice.textContent = (`Стоимость покупки: ${calculateTotalPrice(2, 25000000)}`)">
+        Узнать стоимость покупки
+      </button>
+    </div>
+    <!-- при ажатии кнопки заполнится текст со стоимостью -->
+    <h2 id="main__btn-price"></h2>
+  </main>
+  <footer></footer>
+  <script src="./assets/script/index.js"></script>
 </body>
 
 </html>
